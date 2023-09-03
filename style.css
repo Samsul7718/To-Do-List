@@ -1,0 +1,248 @@
+body {
+  margin: 0;
+  color: yellow;
+}
+
+.container {
+  margin: auto;
+  width: 50%;
+  text-align: center;
+  min-width: 400px;
+  background-color: cyan;
+  border-radius: 10px;
+  height: auto;
+}
+.heading {
+  text-align: center;
+  font-size: bold;
+  color: black;
+  margin-bottom: 10px;
+}
+#input {
+  border: 2px solid;
+  height: 60px;
+  border-radius: 32px;
+  border: transparent;
+  outline: none;
+  color: black;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+#samsul {
+  text-align: center;
+  height: 60px;
+  width: 60%;
+  border: 2px solid yellow;
+  border-radius: 32px;
+  margin-top: 8px;
+}
+.input-div {
+  display: flex;
+  /* border-radius: 18px;
+    border: 2px solid white; */
+  width: 90%;
+  height: 100px;
+  margin-left: 35px;
+  margin-top: 10px;
+  border: 2px solid blue;
+  justify-content: space-around;
+  align-items: center;
+  padding-bottom: 10px;
+  background-color: blue;
+  border-radius: 15px;
+}
+
+hr {
+  width: 80%;
+}
+input,
+i {
+  position: static;
+  font-size: 40px;
+  left: 5px;
+  width: 10%;
+  color: white;
+}
+.input_div,
+input {
+  border: none;
+  background-color: transparent;
+  height: 40px;
+  width: 70%;
+  top: -5px;
+  font-size: 20px;
+  border-radius: 18px;
+  text-transform: capitalize;
+}
+.input_div,
+button {
+  padding: 0;
+  right: 10px;
+  position: relative;
+  border: none;
+  width: 10%;
+  background-color: transparent;
+}
+.add i:hover {
+  color: deeppink;
+}
+.completed-div {
+  margin-top: 10px;
+  display: flex;
+  width: 90%;
+  margin-left: 5%;
+  flex-direction: row;
+  justify-content: space-between;
+  justify-items: center;
+  font-size: 15px;
+}
+.completed-div div span {
+  margin-left: 10px;
+}
+.completed-div div i {
+  margin-right: 10px;
+}
+.completed-left-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 30%;
+}
+
+ul li {
+  padding: 10px;
+  margin-left: 15%;
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  align-items: inherit;
+  align-items: center;
+  background-color: #0dc70d;
+  border-radius: 15px;
+  margin-bottom: 5px;
+  color: black;
+  font-size: large;
+  text-transform: capitalize;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+.delete {
+  visibility: hidden;
+}
+li:hover > .delete {
+  visibility: visible;
+}
+
+#check-box {
+  margin-left: 5%;
+}
+ul li:hover {
+  background: black;
+  color: red;
+}
+#list input {
+  padding: 0;
+  height: initial;
+  width: initial;
+  margin-bottom: 0;
+  display: none;
+  cursor: pointer;
+}
+
+#list label {
+  position: relative;
+  cursor: pointer;
+}
+#container > i {
+  display: inline;
+  color: red;
+}
+
+#list label:before {
+  content: '';
+  /* -webkit-appearance: none; */
+  background-color: transparent;
+  border: 2px solid #0079bf;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05),
+    inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+  padding: 10px;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  cursor: pointer;
+  margin-right: 10px;
+}
+#list input:checked + label:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 2px;
+  left: 9px;
+  width: 6px;
+  height: 14px;
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+#list input:checked + label:before {
+  background: #0079bf;
+}
+#list input:checked + label {
+  text-decoration: line-through;
+}
+
+#end {
+  margin-top: 30px;
+  margin-left: 5%;
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: center;
+  margin-bottom: 30px;
+}
+#total-box {
+  height: 30px;
+  color: black;
+  font-size: large;
+  text-transform: capitalize;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+#task {
+  text-align: center;
+  width: 20%;
+}
+
+.delete {
+  font-size: 20px;
+  padding: 5px 0px;
+  border-radius: 3px;
+  color: red;
+}
+.delete:hover {
+  background: transparent;
+  cursor: pointer;
+}
+
+#end-right button {
+  margin-top: 5px;
+  width: 150px;
+  height: 50px;
+  border-radius: 32px;
+  text-align: center;
+  background-color: cadetblue;
+  color: black;
+  font-size: large;
+  text-transform: capitalize;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+
+#button1:hover {
+  background-color: green;
+}
+#button2:hover {
+  background-color: red;
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To Do List</title>
+    <!-- Connect awsome front for icons -->
+    <script
+      src="https://kit.fontawesome.com/7cb44feacc.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Link to css file -->
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <!--Link to the javaScript file  -->
+    <script type="text/javaScript" src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="heading">
+        <h1>Samsul To-Do-List</h1>
+      </div>
+      <div class="input-div">
+        <i class="fas fa-file-alt"></i>
+        <!-- Input box for to do's -->
+        <div id="samsul">
+          <input type="text" placeholder="Enter your Todo's..." id="input" />
+        </div>
+        <!-- add button -->
+        <button onclick="newaddInputTasks()" type="submit" class="add">
+          ADD
+          <i
+            class="fa-solid fa-circle-plus"
+            style="cursor: pointer"
+            class="add"
+          ></i>
+        </button>
+      </div>
+      <div class="completed-div">
+        <!-- completed task -->
+        <!-- tick icon -->
+        <div class="completed-left-div">
+          <i
+            class="fa-solid fa-check-double"
+            style="font-size: 20px; color: black"
+          ></i>
+          <h4 style="color: black">Completed all tasks</h4>
+        </div>
+
+        <h4 style="color: black">Clear Completed</h4>
+      </div>
+      <hr />
+      <div id="mysamsul" class="list_item">
+        <ul id="list"></ul>
+      </div>
+      <!-- <hr /> -->
+      <div id="end">
+        <div id="task">
+          <p id="total-box"><span id="total_task">0</span> task left</p>
+        </div>
+
+        <div id="end-right">
+          <button id="button1" style="cursor: pointer" onclick="allMark()">
+            All Mark
+          </button>
+        </div>
+
+        <div id="end-right">
+          <button
+            id="button2"
+            style="cursor: pointer"
+            onclick="allTaskDelete()"
+          >
+            All delete
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
